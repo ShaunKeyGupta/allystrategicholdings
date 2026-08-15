@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alliance Strategic Holdings — Coin Appraisal Register &amp; Coin Shop Mastery</title>
+<meta name="description" content="Alliance Strategic Holdings LLC develops the Coin Appraisal Register, a subscription buying platform for independent coin and collectibles shops, and Coin Shop Mastery, an operator training course. US-based small business customers.">
+<meta property="og:title" content="Alliance Strategic Holdings — Coin Appraisal Register">
+<meta property="og:description" content="Software and training for independent coin and collectibles shops. Disciplined pricing on every buy, a paper trail on every deal.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://allystrategicholdings.com">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='none' stroke='%2317402E' stroke-width='2.5'/%3E%3Ctext x='16' y='21' font-family='monospace' font-size='13' font-weight='bold' text-anchor='middle' fill='%2317402E'%3EAS%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Archivo:wght@400;500;600&family=Spline+Sans+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#1B201D;
+  --paper:#FAFAF7;
+  --ledger:#17402E;
+  --ledger-deep:#0F2C1F;
+  --gold:#A9852F;
+  --line:#DCDCD3;
+  --muted:#5B615C;
+  --card:#FFFFFF;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+body{
+  font-family:'Archivo',system-ui,sans-serif;
+  background:var(--paper);
+  color:var(--ink);
+  line-height:1.6;
+  font-size:17px;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+a{color:inherit}
+a:focus-visible,button:focus-visible{outline:2px solid var(--ledger);outline-offset:3px}
+
+/* ---------- header ---------- */
+header{border-bottom:1px solid var(--line);background:var(--paper);position:sticky;top:0;z-index:10}
+.nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+.mark{font-family:'Fraunces',serif;font-weight:600;font-size:18px;letter-spacing:.01em;text-decoration:none;display:flex;align-items:center;gap:10px}
+.mark .seal{width:26px;height:26px;border:1.5px solid var(--ledger);border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:12px;color:var(--ledger);font-family:'Spline Sans Mono',monospace}
+.nav-links{display:flex;gap:28px;align-items:center;font-size:15px}
+.nav-links a{text-decoration:none;color:var(--muted)}
+.nav-links a:hover{color:var(--ink)}
+.btn{display:inline-block;background:var(--ledger);color:#fff;text-decoration:none;padding:12px 22px;border-radius:4px;font-weight:600;font-size:15px;border:1px solid var(--ledger)}
+.btn:hover{background:var(--ledger-deep)}
+.btn.ghost{background:transparent;color:var(--ledger)}
+.btn.ghost:hover{background:#EFF3EE}
+.btn.small{padding:9px 16px;font-size:14px}
+@media (max-width:720px){.nav-links a:not(.btn){display:none}}
+
+/* ---------- hero ---------- */
+.hero{padding:72px 0 64px;display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
+@media (max-width:880px){.hero{grid-template-columns:1fr;padding:48px 0}}
+.eyebrow{font-family:'Spline Sans Mono',monospace;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:18px}
+h1{font-family:'Fraunces',serif;font-weight:600;font-size:clamp(34px,5vw,54px);line-height:1.08;letter-spacing:-.01em;margin-bottom:20px}
+.sub{font-size:19px;color:var(--muted);max-width:34em;margin-bottom:30px}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap}
+.hero-note{margin-top:16px;font-size:14px;color:var(--muted)}
+
+/* ---------- register ticket (signature element) ---------- */
+.ticket{
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:6px;
+  box-shadow:0 1px 2px rgba(27,32,29,.06);
+  font-family:'Spline Sans Mono',monospace;
+  font-size:13.5px;
+  overflow:hidden;
+}
+.ticket-head{background:var(--ledger);color:#E9EFE9;padding:12px 18px;display:flex;justify-content:space-between;font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+.ticket-body{padding:18px}
+.trow{display:flex;justify-content:space-between;padding:7px 0;border-bottom:1px dashed var(--line)}
+.trow:last-child{border-bottom:none}
+.trow .lbl{color:var(--muted)}
+.trow .val{font-weight:500;font-variant-numeric:tabular-nums}
+.trow.total{border-top:1.5px solid var(--ink);margin-top:6px;padding-top:12px;font-size:15px}
+.trow.total .val{color:var(--ledger);font-weight:600}
+.ticket-foot{padding:10px 18px 14px;font-size:11.5px;color:var(--muted);border-top:1px solid var(--line)}
+.stamp{display:inline-block;border:1px solid var(--gold);color:var(--gold);border-radius:3px;padding:1px 7px;font-size:11px;letter-spacing:.08em;text-transform:uppercase}
+
+/* ---------- sources strip ---------- */
+.strip{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:22px 0;background:#F4F4EE}
+.strip .wrap{display:flex;gap:12px 36px;align-items:center;flex-wrap:wrap;justify-content:center}
+.strip .lead{font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-family:'Spline Sans Mono',monospace}
+.strip .src{font-weight:600;font-size:15px;color:var(--ledger)}
+
+/* ---------- sections ---------- */
+section{padding:80px 0;scroll-margin-top:76px}
+@media (max-width:720px){section{padding:56px 0}}
+.kicker{font-family:'Spline Sans Mono',monospace;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:14px}
+h2{font-family:'Fraunces',serif;font-weight:600;font-size:clamp(28px,3.6vw,38px);line-height:1.15;margin-bottom:16px;letter-spacing:-.01em}
+.section-sub{color:var(--muted);max-width:38em;margin-bottom:44px;font-size:18px}
+
+/* features */
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+@media (max-width:880px){.grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:600px){.grid{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:24px}
+.card h3{font-size:17px;font-weight:600;margin-bottom:8px}
+.card p{font-size:15px;color:var(--muted)}
+.card .tag{font-family:'Spline Sans Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:10px}
+
+/* how it works */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;counter-reset:step}
+@media (max-width:720px){.steps{grid-template-columns:1fr}}
+.step{border-top:2px solid var(--ledger);padding-top:18px}
+.step::before{counter-increment:step;content:counter(step,decimal-leading-zero);font-family:'Spline Sans Mono',monospace;color:var(--gold);font-size:13px;letter-spacing:.1em;display:block;margin-bottom:10px}
+.step h3{font-size:18px;margin-bottom:8px}
+.step p{font-size:15px;color:var(--muted)}
+
+/* course */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+@media (max-width:880px){.split{grid-template-columns:1fr;gap:32px}}
+.modlist{list-style:none;border:1px solid var(--line);border-radius:6px;background:var(--card);overflow:hidden}
+.modlist li{padding:13px 18px;border-bottom:1px solid var(--line);display:flex;gap:14px;font-size:15px;align-items:baseline}
+.modlist li:last-child{border-bottom:none}
+.modlist .n{font-family:'Spline Sans Mono',monospace;color:var(--gold);font-size:12px;min-width:22px}
+
+/* pricing */
+#pricing{background:var(--ledger);color:#E9EFE9}
+#pricing .kicker{color:#CBB878}
+#pricing h2{color:#fff}
+#pricing .section-sub{color:#B9C7BC}
+.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+@media (max-width:880px){.plans{grid-template-columns:1fr}}
+.plan{background:#123425;border:1px solid #2C5340;border-radius:6px;padding:28px 26px;display:flex;flex-direction:column}
+.plan.featured{background:#FAFAF7;color:var(--ink);border-color:#FAFAF7}
+.plan .name{font-size:15px;letter-spacing:.08em;text-transform:uppercase;font-family:'Spline Sans Mono',monospace;margin-bottom:14px;color:#CBB878}
+.plan.featured .name{color:var(--gold)}
+.plan .price{font-family:'Fraunces',serif;font-size:40px;font-weight:600;line-height:1}
+.plan .per{font-size:14px;color:#9DB3A3;margin-top:6px;margin-bottom:20px}
+.plan.featured .per{color:var(--muted)}
+.plan ul{list-style:none;font-size:14.5px;margin-bottom:26px;flex:1}
+.plan ul li{padding:6px 0;border-bottom:1px dashed #2C5340;color:#CFDCD2}
+.plan.featured ul li{border-bottom-color:var(--line);color:var(--ink)}
+.plan ul li:last-child{border-bottom:none}
+.plan .btn{text-align:center;background:#fff;color:var(--ledger);border-color:#fff}
+.plan .btn:hover{background:#E7EDE7}
+.plan.featured .btn{background:var(--ledger);color:#fff;border-color:var(--ledger)}
+.plan.featured .btn:hover{background:var(--ledger-deep)}
+.pricing-note{margin-top:26px;font-size:14px;color:#9DB3A3;max-width:52em}
+
+/* about */
+.about-box{border-left:3px solid var(--gold);padding-left:26px;max-width:44em}
+.about-box p{margin-bottom:14px;color:var(--muted)}
+.about-box p strong{color:var(--ink)}
+
+/* cta band */
+.cta-band{border-top:1px solid var(--line);text-align:center;padding:80px 24px}
+.cta-band h2{margin-bottom:14px}
+.cta-band p{color:var(--muted);margin-bottom:28px}
+
+/* footer */
+footer{border-top:1px solid var(--line);padding:36px 0;font-size:13.5px;color:var(--muted)}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+footer a{color:var(--muted)}
+footer .right{text-align:right}
+@media (max-width:600px){footer .right{text-align:left}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="mark" href="#top"><span class="seal">AS</span>Alliance Strategic Holdings</a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="#platform">Platform</a>
+      <a href="#course">Course</a>
+      <a href="#pricing">Pricing</a>
+      <a class="btn small" href="mailto:hello@allystrategicholdings.com?subject=Founding%20operator%20inquiry">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+<div class="wrap hero">
+  <div>
+    <p class="eyebrow">Coin Appraisal Register</p>
+    <h1>Every offer priced with discipline. Every deal on the record.</h1>
+    <p class="sub">Software and training for independent coin and collectibles shops. The Coin Appraisal Register prices every buy against live spot, wholesale sheets, and sold comps — then documents the deal from intake to signed offer.</p>
+    <div class="hero-ctas">
+      <a class="btn" href="mailto:hello@allystrategicholdings.com?subject=Founding%20operator%20inquiry&body=Shop%20name%3A%0ACity%2C%20state%3A%0AYears%20operating%3A%0A">Request founding operator access</a>
+      <a class="btn ghost" href="#pricing">See pricing</a>
+    </div>
+    <p class="hero-note">Now onboarding a limited founding cohort of US shop operators.</p>
+  </div>
+
+  <div class="ticket" role="img" aria-label="Sample appraisal ticket showing an item priced against melt value, wholesale bid, and sold comparables, producing a documented offer">
+    <div class="ticket-head"><span>Appraisal ticket</span><span>No. 000214</span></div>
+    <div class="ticket-body">
+      <div class="trow"><span class="lbl">Item</span><span class="val">1908 $20 Saint-Gaudens</span></div>
+      <div class="trow"><span class="lbl">Cert lookup</span><span class="val">Verified · MS-63</span></div>
+      <div class="trow"><span class="lbl">Live melt</span><span class="val">$3,142.60</span></div>
+      <div class="trow"><span class="lbl">Wholesale bid</span><span class="val">$3,390.00</span></div>
+      <div class="trow"><span class="lbl">Sold comps (30d)</span><span class="val">$3,485.00</span></div>
+      <div class="trow"><span class="lbl">Max payout ceiling</span><span class="val">$3,050.00</span></div>
+      <div class="trow total"><span class="lbl">Documented offer</span><span class="val">$2,975.00</span></div>
+    </div>
+    <div class="ticket-foot"><span class="stamp">Sample</span>&nbsp; Illustrative figures. Live tickets price from real-time data sources.</div>
+  </div>
+</div>
+
+<div class="strip">
+  <div class="wrap">
+    <span class="lead">Pricing sources wired into every offer</span>
+    <span class="src">Live spot prices</span>
+    <span class="src">PCGS cert data</span>
+    <span class="src">CDN Greysheet</span>
+    <span class="src">eBay sold comps</span>
+  </div>
+</div>
+
+<section id="platform">
+  <div class="wrap">
+    <p class="kicker">The platform</p>
+    <h2>A buying register that protects the margin on every deal.</h2>
+    <p class="section-sub">Most shops lose money one deal at a time — a misjudged premium here, an undocumented payout there. The register makes disciplined pricing the default and puts every transaction on paper.</p>
+    <div class="grid">
+      <div class="card"><span class="tag">Pricing</span><h3>Dual pricing engine</h3><p>Every item priced against melt, wholesale, and retail comps at once, with a max payout ceiling that keeps offers inside your margin rules.</p></div>
+      <div class="card"><span class="tag">Data</span><h3>Live market feeds</h3><p>Real-time spot prices, PCGS certification lookup, CDN Greysheet wholesale values, and recent eBay sold listings — pulled into the ticket automatically.</p></div>
+      <div class="card"><span class="tag">Control</span><h3>Manager override trail</h3><p>Staff can't exceed payout ceilings without a manager PIN. Every override is logged, so you see exactly who paid what and why.</p></div>
+      <div class="card"><span class="tag">Compliance</span><h3>Built-in hard stops</h3><p>Automatic checkpoints for regulated situations — including pre-1933 gold handling and cash transaction thresholds — before a deal can close.</p></div>
+      <div class="card"><span class="tag">Paper trail</span><h3>Signed offer documents</h3><p>Every accepted deal generates an offer letter PDF with customer signature, stored with photos and pricing detail for your records.</p></div>
+      <div class="card"><span class="tag">Follow-up</span><h3>CRM handoff</h3><p>Accepted deals flow to your CRM by webhook, so follow-up, reviews, and repeat business run without retyping a single record.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="how" style="padding-top:0">
+  <div class="wrap">
+    <p class="kicker">How a deal runs</p>
+    <h2>Intake to signed offer in one pass.</h2>
+    <div class="steps" style="margin-top:40px">
+      <div class="step"><h3>Intake</h3><p>Log the customer and item on the iPad at the counter — photos, cert numbers, and condition captured in the ticket.</p></div>
+      <div class="step"><h3>Price</h3><p>The register pulls live melt, wholesale bid, and sold comps, then computes an offer inside your payout rules. No guessing at the counter.</p></div>
+      <div class="step"><h3>Close</h3><p>Customer signs the offer document, compliance checks clear, the record archives, and the deal hands off to follow-up automatically.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="course" style="background:#F4F4EE;border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="wrap split">
+    <div>
+      <p class="kicker">The training</p>
+      <h2>Coin Shop Mastery</h2>
+      <p class="section-sub" style="margin-bottom:24px">A complete operator training program: how a profitable coin and collectibles shop sources inventory, prices with discipline, and builds repeat business. Built from systems proven on the shop floor — the course teaches the method, the register enforces it.</p>
+      <a class="btn" href="mailto:hello@allystrategicholdings.com?subject=Coin%20Shop%20Mastery%20inquiry">Ask about enrollment</a>
+    </div>
+    <ol class="modlist" aria-label="Course curriculum areas">
+      <li><span class="n">01</span>Sourcing: walk-ins, estates, and buy channels</li>
+      <li><span class="n">02</span>Grading and authentication fundamentals</li>
+      <li><span class="n">03</span>Pricing discipline and premium structures</li>
+      <li><span class="n">04</span>The offer conversation, step by step</li>
+      <li><span class="n">05</span>Compliance and recordkeeping for buyers</li>
+      <li><span class="n">06</span>Building the operation: staff, systems, capital</li>
+      <li><span class="n">07</span>Repeat business and customer follow-up</li>
+      <li><span class="n">08</span>Scaling: events, partnerships, second locations</li>
+    </ol>
+  </div>
+</section>
+
+<section id="pricing">
+  <div class="wrap">
+    <p class="kicker">Pricing</p>
+    <h2>Straightforward pricing. No hidden tiers.</h2>
+    <p class="section-sub">Pick the piece you need, or take the bundle and train the whole team while the register runs the counter.</p>
+    <div class="plans">
+      <div class="plan">
+        <span class="name">Coin Shop Mastery</span>
+        <div class="price">$1,997</div>
+        <p class="per">one-time · lifetime access</p>
+        <ul>
+          <li>Full operator curriculum</li>
+          <li>Train your entire team</li>
+          <li>Lifetime updates to course material</li>
+        </ul>
+        <a class="btn" href="mailto:hello@allystrategicholdings.com?subject=Coin%20Shop%20Mastery%20inquiry">Ask about enrollment</a>
+      </div>
+      <div class="plan featured">
+        <span class="name">Course + App bundle</span>
+        <div class="price">$3,997</div>
+        <p class="per">first year · annual app plan + course included</p>
+        <ul>
+          <li>Coin Shop Mastery included ($1,997 value)</li>
+          <li>Annual app subscription</li>
+          <li>Setup and data provisioning</li>
+          <li>Best first-year economics</li>
+        </ul>
+        <a class="btn" href="mailto:hello@allystrategicholdings.com?subject=Bundle%20inquiry">Request the bundle</a>
+      </div>
+      <div class="plan">
+        <span class="name">Coin Appraisal Register</span>
+        <div class="price">$299</div>
+        <p class="per">per month · $2,000 one-time setup</p>
+        <ul>
+          <li>Full platform, unlimited tickets</li>
+          <li>All pricing feeds included</li>
+          <li>Annual prepay: $2,990 (save $598)</li>
+        </ul>
+        <a class="btn" href="mailto:hello@allystrategicholdings.com?subject=Founding%20operator%20inquiry">Request founding access</a>
+      </div>
+    </div>
+    <p class="pricing-note">Founding operator cohort is limited and onboarded personally, one shop per market area. Setup covers data migration, pricing feed configuration, and provisioning for your shop.</p>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <p class="kicker">The company</p>
+    <h2>About Alliance Strategic Holdings</h2>
+    <div class="about-box" style="margin-top:28px">
+      <p><strong>Alliance Strategic Holdings LLC develops and licenses the Coin Appraisal Register</strong>, a subscription software platform for independent coin and collectibles shop operators, and publishes Coin Shop Mastery, an operator training course.</p>
+      <p>Revenue comes from software subscriptions, setup fees, and course sales. Our customers are US-based small business owners who buy and sell coins, bullion, and collectibles — and who want the pricing discipline and paper trail of a much larger operation without hiring one.</p>
+      <p>We are a US company serving US shops. For inquiries, write to <a href="mailto:hello@allystrategicholdings.com">hello@allystrategicholdings.com</a>.</p>
+    </div>
+  </div>
+</section>
+
+<div class="cta-band">
+  <h2>Run your counter like it's audited.</h2>
+  <p>Tell us about your shop and we'll follow up about the founding operator cohort.</p>
+  <a class="btn" href="mailto:hello@allystrategicholdings.com?subject=Founding%20operator%20inquiry&body=Shop%20name%3A%0ACity%2C%20state%3A%0AYears%20operating%3A%0A">Request founding operator access</a>
+</div>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <div><strong>Alliance Strategic Holdings LLC</strong></div>
+      <div>117 South Lexington Street, Harrisonville, MO 64701</div>
+    </div>
+    <div class="right">
+      <div><a href="mailto:hello@allystrategicholdings.com">hello@allystrategicholdings.com</a></div>
+      <div>© 2026 Alliance Strategic Holdings LLC. All rights reserved.</div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
