@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Alliance Strategic Holdings — Coin Appraisal Register &amp; Coin Shop Mastery</title>
+<title>Alliance Strategic Holdings | Coin Appraisal Register &amp; Coin Shop Mastery</title>
 <meta name="description" content="Alliance Strategic Holdings LLC develops the Coin Appraisal Register, a subscription buying platform for independent coin and collectibles shops, and Coin Shop Mastery, an operator training course. US-based small business customers.">
-<meta property="og:title" content="Alliance Strategic Holdings — Coin Appraisal Register">
+<meta property="og:title" content="Alliance Strategic Holdings | Coin Appraisal Register">
 <meta property="og:description" content="Software and training for independent coin and collectibles shops. Disciplined pricing on every buy, a paper trail on every deal.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://allystrategicholdings.com">
@@ -37,14 +37,14 @@ body{
 }
 .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
 a{color:inherit}
-a:focus-visible,button:focus-visible{outline:2px solid var(--ledger);outline-offset:3px}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var(--ledger);outline-offset:3px}
 
-/* ---------- header ---------- */
+/* header */
 header{border-bottom:1px solid var(--line);background:var(--paper);position:sticky;top:0;z-index:10}
 .nav{display:flex;align-items:center;justify-content:space-between;height:64px}
 .mark{font-family:'Fraunces',serif;font-weight:600;font-size:18px;letter-spacing:.01em;text-decoration:none;display:flex;align-items:center;gap:10px}
 .mark .seal{width:26px;height:26px;border:1.5px solid var(--ledger);border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:12px;color:var(--ledger);font-family:'Spline Sans Mono',monospace}
-.nav-links{display:flex;gap:28px;align-items:center;font-size:15px}
+.nav-links{display:flex;gap:26px;align-items:center;font-size:15px}
 .nav-links a{text-decoration:none;color:var(--muted)}
 .nav-links a:hover{color:var(--ink)}
 .btn{display:inline-block;background:var(--ledger);color:#fff;text-decoration:none;padding:12px 22px;border-radius:4px;font-weight:600;font-size:15px;border:1px solid var(--ledger)}
@@ -52,9 +52,9 @@ header{border-bottom:1px solid var(--line);background:var(--paper);position:stic
 .btn.ghost{background:transparent;color:var(--ledger)}
 .btn.ghost:hover{background:#EFF3EE}
 .btn.small{padding:9px 16px;font-size:14px}
-@media (max-width:720px){.nav-links a:not(.btn){display:none}}
+@media (max-width:760px){.nav-links a:not(.btn){display:none}}
 
-/* ---------- hero ---------- */
+/* hero */
 .hero{padding:72px 0 64px;display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
 @media (max-width:880px){.hero{grid-template-columns:1fr;padding:48px 0}}
 .eyebrow{font-family:'Spline Sans Mono',monospace;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:18px}
@@ -63,16 +63,8 @@ h1{font-family:'Fraunces',serif;font-weight:600;font-size:clamp(34px,5vw,54px);l
 .hero-ctas{display:flex;gap:14px;flex-wrap:wrap}
 .hero-note{margin-top:16px;font-size:14px;color:var(--muted)}
 
-/* ---------- register ticket (signature element) ---------- */
-.ticket{
-  background:var(--card);
-  border:1px solid var(--line);
-  border-radius:6px;
-  box-shadow:0 1px 2px rgba(27,32,29,.06);
-  font-family:'Spline Sans Mono',monospace;
-  font-size:13.5px;
-  overflow:hidden;
-}
+/* register ticket */
+.ticket{background:var(--card);border:1px solid var(--line);border-radius:6px;box-shadow:0 1px 2px rgba(27,32,29,.06);font-family:'Spline Sans Mono',monospace;font-size:13.5px;overflow:hidden}
 .ticket-head{background:var(--ledger);color:#E9EFE9;padding:12px 18px;display:flex;justify-content:space-between;font-size:12px;letter-spacing:.08em;text-transform:uppercase}
 .ticket-body{padding:18px}
 .trow{display:flex;justify-content:space-between;padding:7px 0;border-bottom:1px dashed var(--line)}
@@ -84,18 +76,25 @@ h1{font-family:'Fraunces',serif;font-weight:600;font-size:clamp(34px,5vw,54px);l
 .ticket-foot{padding:10px 18px 14px;font-size:11.5px;color:var(--muted);border-top:1px solid var(--line)}
 .stamp{display:inline-block;border:1px solid var(--gold);color:var(--gold);border-radius:3px;padding:1px 7px;font-size:11px;letter-spacing:.08em;text-transform:uppercase}
 
-/* ---------- sources strip ---------- */
+/* sources strip */
 .strip{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:22px 0;background:#F4F4EE}
 .strip .wrap{display:flex;gap:12px 36px;align-items:center;flex-wrap:wrap;justify-content:center}
 .strip .lead{font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-family:'Spline Sans Mono',monospace}
 .strip .src{font-weight:600;font-size:15px;color:var(--ledger)}
 
-/* ---------- sections ---------- */
+/* sections */
 section{padding:80px 0;scroll-margin-top:76px}
 @media (max-width:720px){section{padding:56px 0}}
 .kicker{font-family:'Spline Sans Mono',monospace;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:14px}
 h2{font-family:'Fraunces',serif;font-weight:600;font-size:clamp(28px,3.6vw,38px);line-height:1.15;margin-bottom:16px;letter-spacing:-.01em}
 .section-sub{color:var(--muted);max-width:38em;margin-bottom:44px;font-size:18px}
+
+/* leaks */
+.leaks{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+@media (max-width:720px){.leaks{grid-template-columns:1fr}}
+.leak{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--gold);border-radius:6px;padding:24px}
+.leak h3{font-size:17px;margin-bottom:8px}
+.leak p{font-size:15px;color:var(--muted)}
 
 /* features */
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
@@ -106,7 +105,7 @@ h2{font-family:'Fraunces',serif;font-weight:600;font-size:clamp(28px,3.6vw,38px)
 .card p{font-size:15px;color:var(--muted)}
 .card .tag{font-family:'Spline Sans Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:10px}
 
-/* how it works */
+/* steps */
 .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;counter-reset:step}
 @media (max-width:720px){.steps{grid-template-columns:1fr}}
 .step{border-top:2px solid var(--ledger);padding-top:18px}
@@ -121,6 +120,20 @@ h2{font-family:'Fraunces',serif;font-weight:600;font-size:clamp(28px,3.6vw,38px)
 .modlist li{padding:13px 18px;border-bottom:1px solid var(--line);display:flex;gap:14px;font-size:15px;align-items:baseline}
 .modlist li:last-child{border-bottom:none}
 .modlist .n{font-family:'Spline Sans Mono',monospace;color:var(--gold);font-size:12px;min-width:22px}
+
+/* value stack */
+.stack{max-width:640px;margin:0 auto;background:var(--card);border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.stack-head{background:var(--ledger);color:#E9EFE9;padding:16px 24px;font-family:'Spline Sans Mono',monospace;font-size:13px;letter-spacing:.1em;text-transform:uppercase;display:flex;justify-content:space-between}
+.srow{display:flex;justify-content:space-between;gap:16px;padding:15px 24px;border-bottom:1px dashed var(--line);font-size:15.5px}
+.srow .what strong{display:block}
+.srow .what span{font-size:13.5px;color:var(--muted)}
+.srow .worth{font-family:'Spline Sans Mono',monospace;white-space:nowrap;color:var(--muted)}
+.srow.sum{border-bottom:none;border-top:1.5px solid var(--ink);font-size:16px;align-items:center}
+.srow.sum .worth{color:var(--muted);text-decoration:line-through}
+.srow.pay{border-bottom:none;background:#F4F4EE;align-items:center}
+.srow.pay .worth{color:var(--ledger);font-weight:600;font-size:20px;text-decoration:none}
+.stack-cta{padding:20px 24px 24px;text-align:center;background:#F4F4EE}
+.stack-note{font-size:13.5px;color:var(--muted);margin-top:12px}
 
 /* pricing */
 #pricing{background:var(--ledger);color:#E9EFE9}
@@ -145,6 +158,40 @@ h2{font-family:'Fraunces',serif;font-weight:600;font-size:clamp(28px,3.6vw,38px)
 .plan.featured .btn{background:var(--ledger);color:#fff;border-color:var(--ledger)}
 .plan.featured .btn:hover{background:var(--ledger-deep)}
 .pricing-note{margin-top:26px;font-size:14px;color:#9DB3A3;max-width:52em}
+
+/* guarantee */
+.guarantee-box{max-width:720px;margin:0 auto;text-align:center;border:1.5px solid var(--gold);border-radius:6px;padding:44px 36px;background:var(--card)}
+.guarantee-box .seal-lg{width:54px;height:54px;border:2px solid var(--gold);border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-family:'Spline Sans Mono',monospace;font-size:15px;color:var(--gold);margin-bottom:20px}
+.guarantee-box h2{margin-bottom:14px}
+.guarantee-box p{color:var(--muted);max-width:36em;margin:0 auto 10px}
+
+/* fit */
+.fit{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+@media (max-width:720px){.fit{grid-template-columns:1fr}}
+.fit-col{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:26px}
+.fit-col h3{font-size:17px;margin-bottom:14px}
+.fit-col ul{list-style:none;font-size:15px}
+.fit-col li{padding:7px 0 7px 26px;position:relative;color:var(--muted);border-bottom:1px dashed var(--line)}
+.fit-col li:last-child{border-bottom:none}
+.fit-col.yes li::before{content:"+";position:absolute;left:2px;color:var(--ledger);font-weight:600;font-family:'Spline Sans Mono',monospace}
+.fit-col.no li::before{content:"x";position:absolute;left:4px;color:var(--gold);font-weight:600;font-family:'Spline Sans Mono',monospace}
+
+/* faq */
+.faq{max-width:720px;margin:0 auto}
+.faq details{border:1px solid var(--line);border-radius:6px;background:var(--card);margin-bottom:12px}
+.faq summary{cursor:pointer;padding:16px 20px;font-weight:600;font-size:16px;list-style:none;display:flex;justify-content:space-between;gap:12px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-family:'Spline Sans Mono',monospace;color:var(--gold)}
+.faq details[open] summary::after{content:"-"}
+.faq details p{padding:0 20px 18px;color:var(--muted);font-size:15px}
+
+/* magnet band */
+.magnet{background:#F4F4EE;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.magnet .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center;padding-top:56px;padding-bottom:56px}
+@media (max-width:760px){.magnet .wrap{grid-template-columns:1fr}}
+.magnet h2{font-size:clamp(24px,3vw,32px)}
+.magnet p{color:var(--muted);margin-top:10px;max-width:34em}
+.magnet .side{text-align:center}
 
 /* about */
 .about-box{border-left:3px solid var(--gold);padding-left:26px;max-width:44em}
@@ -173,6 +220,7 @@ footer .right{text-align:right}
       <a href="#platform">Platform</a>
       <a href="#course">Course</a>
       <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
       <a class="btn small" href="mailto:hello@allystrategicholdings.com?subject=Founding%20operator%20inquiry">Contact</a>
     </nav>
   </div>
@@ -182,21 +230,21 @@ footer .right{text-align:right}
 
 <div class="wrap hero">
   <div>
-    <p class="eyebrow">Coin Appraisal Register</p>
-    <h1>Every offer priced with discipline. Every deal on the record.</h1>
-    <p class="sub">Software and training for independent coin and collectibles shops. The Coin Appraisal Register prices every buy against live spot, wholesale sheets, and sold comps — then documents the deal from intake to signed offer.</p>
+    <p class="eyebrow">For independent coin, bullion, and collectibles shops</p>
+    <h1>Keep the margin on every deal your counter makes.</h1>
+    <p class="sub">Buying software and operator training for independent coin and collectibles shops. Every offer priced against live spot, wholesale sheets, and sold comps. Every payout inside your rules. Every deal on paper, without adding a single employee.</p>
     <div class="hero-ctas">
-      <a class="btn" href="mailto:hello@allystrategicholdings.com?subject=Founding%20operator%20inquiry&body=Shop%20name%3A%0ACity%2C%20state%3A%0AYears%20operating%3A%0A">Request founding operator access</a>
+      <a class="btn" href="mailto:hello@allystrategicholdings.com?subject=Founding%20operator%20inquiry&body=Shop%20name%3A%0ACity%2C%20state%3A%0AYears%20operating%3A%0AMonthly%20buy%20volume%20(rough)%3A%0A">Request founding operator access</a>
       <a class="btn ghost" href="#pricing">See pricing</a>
     </div>
-    <p class="hero-note">Now onboarding a limited founding cohort of US shop operators.</p>
+    <p class="hero-note">Founding cohort: 10 shops, one per market area, backed by the Pays-For-Itself Guarantee. Not ready to talk? <a href="#checklist">Start with the free checklist</a>.</p>
   </div>
 
   <div class="ticket" role="img" aria-label="Sample appraisal ticket showing an item priced against melt value, wholesale bid, and sold comparables, producing a documented offer">
     <div class="ticket-head"><span>Appraisal ticket</span><span>No. 000214</span></div>
     <div class="ticket-body">
       <div class="trow"><span class="lbl">Item</span><span class="val">1908 $20 Saint-Gaudens</span></div>
-      <div class="trow"><span class="lbl">Cert lookup</span><span class="val">Verified · MS-63</span></div>
+      <div class="trow"><span class="lbl">Cert lookup</span><span class="val">Verified, MS-63</span></div>
       <div class="trow"><span class="lbl">Live melt</span><span class="val">$3,142.60</span></div>
       <div class="trow"><span class="lbl">Wholesale bid</span><span class="val">$3,390.00</span></div>
       <div class="trow"><span class="lbl">Sold comps (30d)</span><span class="val">$3,485.00</span></div>
@@ -217,16 +265,29 @@ footer .right{text-align:right}
   </div>
 </div>
 
+<section id="leaks" style="padding-bottom:0">
+  <div class="wrap">
+    <p class="kicker">The problem</p>
+    <h2>Shops don't lose money in one big mistake. They leak it one deal at a time.</h2>
+    <p class="section-sub">Three leaks show up at almost every independent counter. None of them feel like a crisis on any single day. All of them compound.</p>
+    <div class="leaks">
+      <div class="leak"><h3>Mispriced premiums</h3><p>Spot moves during the day, staff price from memory, and the premium structure slips. A few points given away on bullion deals adds up to real money over a year of volume.</p></div>
+      <div class="leak"><h3>Undocumented payouts</h3><p>Offers made verbally, payouts with no ceiling, overrides nobody recorded. Without a paper trail, you can't see which deals made money and which quietly didn't.</p></div>
+      <div class="leak"><h3>Dead follow-up</h3><p>The customer who sold you one coin owns a collection. If nothing follows the first deal, the next one walks into a competitor's shop instead of back into yours.</p></div>
+    </div>
+  </div>
+</section>
+
 <section id="platform">
   <div class="wrap">
     <p class="kicker">The platform</p>
-    <h2>A buying register that protects the margin on every deal.</h2>
-    <p class="section-sub">Most shops lose money one deal at a time — a misjudged premium here, an undocumented payout there. The register makes disciplined pricing the default and puts every transaction on paper.</p>
+    <h2>A buying register that closes all three leaks.</h2>
+    <p class="section-sub">The Coin Appraisal Register runs on an iPad at your counter. It makes disciplined pricing the default, puts every transaction on paper, and hands every closed deal to follow-up automatically.</p>
     <div class="grid">
       <div class="card"><span class="tag">Pricing</span><h3>Dual pricing engine</h3><p>Every item priced against melt, wholesale, and retail comps at once, with a max payout ceiling that keeps offers inside your margin rules.</p></div>
-      <div class="card"><span class="tag">Data</span><h3>Live market feeds</h3><p>Real-time spot prices, PCGS certification lookup, CDN Greysheet wholesale values, and recent eBay sold listings — pulled into the ticket automatically.</p></div>
+      <div class="card"><span class="tag">Data</span><h3>Live market feeds</h3><p>Real-time spot prices, PCGS certification lookup, CDN Greysheet wholesale values, and recent eBay sold listings, pulled into the ticket automatically.</p></div>
       <div class="card"><span class="tag">Control</span><h3>Manager override trail</h3><p>Staff can't exceed payout ceilings without a manager PIN. Every override is logged, so you see exactly who paid what and why.</p></div>
-      <div class="card"><span class="tag">Compliance</span><h3>Built-in hard stops</h3><p>Automatic checkpoints for regulated situations — including pre-1933 gold handling and cash transaction thresholds — before a deal can close.</p></div>
+      <div class="card"><span class="tag">Compliance</span><h3>Built-in hard stops</h3><p>Automatic checkpoints for regulated situations (including pre-1933 gold handling and cash transaction thresholds) before a deal can close.</p></div>
       <div class="card"><span class="tag">Paper trail</span><h3>Signed offer documents</h3><p>Every accepted deal generates an offer letter PDF with customer signature, stored with photos and pricing detail for your records.</p></div>
       <div class="card"><span class="tag">Follow-up</span><h3>CRM handoff</h3><p>Accepted deals flow to your CRM by webhook, so follow-up, reviews, and repeat business run without retyping a single record.</p></div>
     </div>
@@ -238,7 +299,7 @@ footer .right{text-align:right}
     <p class="kicker">How a deal runs</p>
     <h2>Intake to signed offer in one pass.</h2>
     <div class="steps" style="margin-top:40px">
-      <div class="step"><h3>Intake</h3><p>Log the customer and item on the iPad at the counter — photos, cert numbers, and condition captured in the ticket.</p></div>
+      <div class="step"><h3>Intake</h3><p>Log the customer and item on the iPad at the counter. Photos, cert numbers, and condition captured in the ticket.</p></div>
       <div class="step"><h3>Price</h3><p>The register pulls live melt, wholesale bid, and sold comps, then computes an offer inside your payout rules. No guessing at the counter.</p></div>
       <div class="step"><h3>Close</h3><p>Customer signs the offer document, compliance checks clear, the record archives, and the deal hands off to follow-up automatically.</p></div>
     </div>
@@ -250,7 +311,7 @@ footer .right{text-align:right}
     <div>
       <p class="kicker">The training</p>
       <h2>Coin Shop Mastery</h2>
-      <p class="section-sub" style="margin-bottom:24px">A complete operator training program: how a profitable coin and collectibles shop sources inventory, prices with discipline, and builds repeat business. Built from systems proven on the shop floor — the course teaches the method, the register enforces it.</p>
+      <p class="section-sub" style="margin-bottom:24px">The course teaches the method. The register enforces it. Coin Shop Mastery is a complete operator training program: how a profitable coin and collectibles shop sources inventory, prices with discipline, runs the offer conversation, and builds repeat business. Built from systems proven on a real shop floor, and usable by your whole team.</p>
       <a class="btn" href="mailto:hello@allystrategicholdings.com?subject=Coin%20Shop%20Mastery%20inquiry">Ask about enrollment</a>
     </div>
     <ol class="modlist" aria-label="Course curriculum areas">
@@ -266,16 +327,42 @@ footer .right{text-align:right}
   </div>
 </section>
 
-<section id="pricing">
+<section id="offer">
+  <div class="wrap">
+    <p class="kicker" style="text-align:center">The founding operator offer</p>
+    <h2 style="text-align:center">The Founding Operator Program: a protected counter in 60 days, guaranteed.</h2>
+    <p class="section-sub" style="text-align:center;margin-left:auto;margin-right:auto">Ten shops. One per market area. Commit to the annual plan at signup and here is everything that comes with your spot, piece by piece.</p>
+    <div class="stack">
+      <div class="stack-head"><span>Founding operator package</span><span>Value</span></div>
+      <div class="srow"><div class="what"><strong>Coin Appraisal Register, 12 months</strong><span>Full platform, unlimited tickets, all pricing feeds, unlimited staff logins</span></div><div class="worth">$3,588</div></div>
+      <div class="srow"><div class="what"><strong>Coin Shop Mastery course</strong><span>All 8 modules, lifetime access, train your entire team</span></div><div class="worth">$1,997</div></div>
+      <div class="srow"><div class="what"><strong>White-glove setup and provisioning</strong><span>Data migration, pricing feed configuration, payout rules built for your shop</span></div><div class="worth">$2,000</div></div>
+      <div class="srow"><div class="what"><strong>Bonus: The Margin Discipline Field Kit</strong><span>The 12-check counter sheet, premium math card, and self-audit scorecard, print-ready for every station, so the discipline survives your busiest Saturday</span></div><div class="worth">$97</div></div>
+      <div class="srow"><div class="what"><strong>Bonus: Your State Compliance Quick-Sheet</strong><span>Your state's dealer registration, reporting, and hold-period rules researched and written up for your shop during setup, so check 11 is never a guess</span></div><div class="worth">$250</div></div>
+      <div class="srow"><div class="what"><strong>Founding rate lock</strong><span>Your subscription price never increases while you stay subscribed</span></div><div class="worth">Included</div></div>
+      <div class="srow"><div class="what"><strong>The Pays-For-Itself Guarantee</strong><span>Setup fee refunded if the register does not pay for itself in 60 days. Terms below.</span></div><div class="worth">Included</div></div>
+      <div class="srow sum"><div class="what"><strong>Total value</strong></div><div class="worth">$7,932</div></div>
+      <div class="srow pay"><div class="what"><strong>Founding operator price</strong><span>$3,997 first year + $2,000 one-time setup</span></div><div class="worth">$5,997</div></div>
+      <div class="stack-cta">
+        <a class="btn" href="mailto:hello@allystrategicholdings.com?subject=Founding%20operator%20inquiry&body=Shop%20name%3A%0ACity%2C%20state%3A%0AYears%20operating%3A%0AMonthly%20buy%20volume%20(rough)%3A%0A">Request founding operator access</a>
+        <p class="stack-note">Ten founding spots. One shop per market area. When your market is taken, it's taken.</p>
+        <p class="stack-note">After the founding cohort closes, standard pricing is $4,000 setup + $497 per month. Founding operators keep the founding rate for life.</p>
+        <p class="stack-note">Why founding pricing exists: we're trading price for proof. Founding operators shape the product and become the case studies. That's what the discount buys us.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="pricing" style="padding-top:64px">
   <div class="wrap">
     <p class="kicker">Pricing</p>
-    <h2>Straightforward pricing. No hidden tiers.</h2>
-    <p class="section-sub">Pick the piece you need, or take the bundle and train the whole team while the register runs the counter.</p>
+    <h2>Three ways in. No hidden tiers.</h2>
+    <p class="section-sub">Start with the training, start with the software, or take the bundle and get both for less than they cost apart.</p>
     <div class="plans">
       <div class="plan">
         <span class="name">Coin Shop Mastery</span>
         <div class="price">$1,997</div>
-        <p class="per">one-time · lifetime access</p>
+        <p class="per">one-time, lifetime access</p>
         <ul>
           <li>Full operator curriculum</li>
           <li>Train your entire team</li>
@@ -286,19 +373,20 @@ footer .right{text-align:right}
       <div class="plan featured">
         <span class="name">Course + App bundle</span>
         <div class="price">$3,997</div>
-        <p class="per">first year · annual app plan + course included</p>
+        <p class="per">first year, plus $2,000 one-time setup</p>
         <ul>
+          <li>Annual app subscription ($2,990 value)</li>
           <li>Coin Shop Mastery included ($1,997 value)</li>
-          <li>Annual app subscription</li>
-          <li>Setup and data provisioning</li>
-          <li>Best first-year economics</li>
+          <li>White-glove setup and provisioning</li>
+          <li>Founding rate locked, never increases</li>
+          <li>The Pays-For-Itself Guarantee</li>
         </ul>
         <a class="btn" href="mailto:hello@allystrategicholdings.com?subject=Bundle%20inquiry">Request the bundle</a>
       </div>
       <div class="plan">
         <span class="name">Coin Appraisal Register</span>
         <div class="price">$299</div>
-        <p class="per">per month · $2,000 one-time setup</p>
+        <p class="per">per month, plus $2,000 one-time setup</p>
         <ul>
           <li>Full platform, unlimited tickets</li>
           <li>All pricing feeds included</li>
@@ -307,9 +395,103 @@ footer .right{text-align:right}
         <a class="btn" href="mailto:hello@allystrategicholdings.com?subject=Founding%20operator%20inquiry">Request founding access</a>
       </div>
     </div>
-    <p class="pricing-note">Founding operator cohort is limited and onboarded personally, one shop per market area. Setup covers data migration, pricing feed configuration, and provisioning for your shop.</p>
+    <p class="pricing-note">Ten founding spots, onboarded personally, one shop per market area. Setup covers data migration, pricing feed configuration, and payout rules built for your shop. After the cohort closes, standard pricing is $4,000 setup + $497 per month; founding operators keep their rate for life.</p>
   </div>
 </section>
+
+<section id="guarantee">
+  <div class="wrap">
+    <div class="guarantee-box">
+      <span class="seal-lg">60</span>
+      <h2>The Pays-For-Itself Guarantee.</h2>
+      <p>Run your buying through the register for 60 days. If the margin discipline hasn't paid for your setup fee by then, we refund the setup fee in full, and you keep running the app free for another 60 days while we make it right.</p>
+      <p>You risk the time it takes to try it. We risk the money.</p>
+      <p>No fine print beyond this page: 60 days, run your buying through the register, setup fee back if it hasn't covered itself.</p>
+    </div>
+  </div>
+</section>
+
+<section id="fit" style="padding-top:0">
+  <div class="wrap">
+    <p class="kicker">Fit check</p>
+    <h2>Built for a specific kind of shop.</h2>
+    <div class="fit" style="margin-top:36px">
+      <div class="fit-col yes">
+        <h3>This is for you if</h3>
+        <ul>
+          <li>You run an independent coin, bullion, or collectibles shop in the US</li>
+          <li>You buy from the public across a counter, at events, or on appointments</li>
+          <li>You have staff making offers, or plan to, and want them inside your rules</li>
+          <li>You want a paper trail behind every payout without more paperwork</li>
+        </ul>
+      </div>
+      <div class="fit-col no">
+        <h3>This is not for you if</h3>
+        <ul>
+          <li>You don't buy from the public (resale-only and online-only sellers)</li>
+          <li>You want software to replace judgment instead of enforce it</li>
+          <li>You're outside the US (for now)</li>
+          <li>Your market area is already taken by a founding operator</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" style="padding-top:0">
+  <div class="wrap">
+    <p class="kicker">Questions</p>
+    <h2 style="margin-bottom:36px">Asked before signing, answered here.</h2>
+    <div class="faq">
+      <details>
+        <summary>What hardware do I need?</summary>
+        <p>An iPad and an internet connection at the counter. The register runs in the browser as an installable app, so there's nothing to maintain and updates arrive automatically.</p>
+      </details>
+      <details>
+        <summary>What does the $2,000 setup actually cover?</summary>
+        <p>Real provisioning work, done for you: migrating your existing records, configuring the live pricing feeds, and building your payout ceilings and margin rules into the register so it enforces your numbers from day one, not generic defaults.</p>
+      </details>
+      <details>
+        <summary>Do I need the course to use the app?</summary>
+        <p>No. Each stands alone. The course teaches the operating method and works for shops on any software. The app enforces pricing discipline whether or not you've taken the course. They're simply built to work best together, which is why the bundle exists.</p>
+      </details>
+      <details>
+        <summary>Why only one shop per market area?</summary>
+        <p>Founding operators get hands-on onboarding and a pricing edge over nearby competitors. Both of those break if we sign your competitor across town. So we don't. First shop in a market area holds it.</p>
+      </details>
+      <details>
+        <summary>How does the guarantee work?</summary>
+        <p>Simple terms: run your buying through the register for your first 60 days. If the margin discipline hasn't covered your setup fee, we refund the setup fee in full and your subscription runs free for another 60 days while we fix what's not working. We only win if your counter does.</p>
+      </details>
+      <details>
+        <summary>When does my subscription start billing?</summary>
+        <p>When your register is live at your counter, not when you sign. Setup and provisioning happen first, on us to schedule promptly; your monthly clock starts the day you can actually run deals through it.</p>
+      </details>
+      <details>
+        <summary>Why isn't this cheaper?</summary>
+        <p>Because it's priced against what it protects. One mispriced deal on a single gold coin can cost more than a month of the software, and a year of loose premiums at real buy volume costs far more than the setup fee. Founding operators are also onboarded personally, and personal doesn't come cheap. The guarantee exists so the price is our risk, not yours.</p>
+      </details>
+      <details>
+        <summary>Can't I just do this with a spreadsheet?</summary>
+        <p>You can run the method by hand, and our free Margin Discipline Checklist is exactly that: the manual version. The difference is enforcement. A spreadsheet doesn't stop an over-ceiling payout at the counter, doesn't log who overrode what, and doesn't pull live pricing at the moment of the offer. The register does, every deal, without anyone remembering to.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<div class="magnet" id="checklist" style="scroll-margin-top:76px">
+  <div class="wrap">
+    <div>
+      <p class="kicker">Free resource</p>
+      <h2>The Margin Discipline Checklist</h2>
+      <p>The 12 pre-payout checks a disciplined buyer runs before any offer over $500, the one-line premium math, the five walk-away triggers, and a scorecard to grade your own counter's discipline today. Three pages, printable, free. It's the manual version of what the register automates.</p>
+    </div>
+    <div class="side">
+      <a class="btn" href="mailto:hello@allystrategicholdings.com?subject=Send%20the%20Margin%20Discipline%20Checklist&body=Shop%20name%3A%0ACity%2C%20state%3A%0A">Email me the checklist</a>
+      <p style="font-size:13px;color:var(--muted);margin-top:10px">We reply with the PDF, usually same day.</p>
+    </div>
+  </div>
+</div>
 
 <section id="about">
   <div class="wrap">
@@ -317,7 +499,7 @@ footer .right{text-align:right}
     <h2>About Alliance Strategic Holdings</h2>
     <div class="about-box" style="margin-top:28px">
       <p><strong>Alliance Strategic Holdings LLC develops and licenses the Coin Appraisal Register</strong>, a subscription software platform for independent coin and collectibles shop operators, and publishes Coin Shop Mastery, an operator training course.</p>
-      <p>Revenue comes from software subscriptions, setup fees, and course sales. Our customers are US-based small business owners who buy and sell coins, bullion, and collectibles — and who want the pricing discipline and paper trail of a much larger operation without hiring one.</p>
+      <p>Revenue comes from software subscriptions, setup fees, and course sales. Our customers are US-based small business owners who buy and sell coins, bullion, and collectibles, and who want the pricing discipline and paper trail of a much larger operation without hiring one.</p>
       <p>We are a US company serving US shops. For inquiries, write to <a href="mailto:hello@allystrategicholdings.com">hello@allystrategicholdings.com</a>.</p>
     </div>
   </div>
@@ -325,8 +507,8 @@ footer .right{text-align:right}
 
 <div class="cta-band">
   <h2>Run your counter like it's audited.</h2>
-  <p>Tell us about your shop and we'll follow up about the founding operator cohort.</p>
-  <a class="btn" href="mailto:hello@allystrategicholdings.com?subject=Founding%20operator%20inquiry&body=Shop%20name%3A%0ACity%2C%20state%3A%0AYears%20operating%3A%0A">Request founding operator access</a>
+  <p>Tell us about your shop. If your market area is open, we'll follow up about the founding cohort.</p>
+  <a class="btn" href="mailto:hello@allystrategicholdings.com?subject=Founding%20operator%20inquiry&body=Shop%20name%3A%0ACity%2C%20state%3A%0AYears%20operating%3A%0AMonthly%20buy%20volume%20(rough)%3A%0A">Request founding operator access</a>
 </div>
 
 </main>
